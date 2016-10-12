@@ -9,6 +9,7 @@ var stream = T.stream('user');
 
 stream.on('follow', followed);
 
+// Tweet when someone follows me
 function followed(eventMsg) {
 	console.log("Follow event!");
 	var name = eventMsg.source.name;
