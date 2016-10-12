@@ -1,4 +1,5 @@
-// Tweets back
+// Tweets back an automated message but can't run twice.
+
 
 console.log("This bot replies!");
 
@@ -25,8 +26,9 @@ function tweetEvent(eventMsg) {
 
 	if (replyto === 'bot285')
 	{
-		var newtweet = '@' + from + ' this is an automatic reply.';
+		var newtweet = '@ ' + from + ' this is an automatic reply!';
 		tweetIt(newtweet);
+		console.log("Message: " + from + " just tweeted you.");
 	}		
 }
 
