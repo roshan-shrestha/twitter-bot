@@ -1,3 +1,5 @@
+// Tweets back when someone follows you.
+
 console.log("This bot is starting now!");
 
 var Twit = require('twit');
