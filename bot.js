@@ -1,3 +1,5 @@
+// Loads tweets with a certain query 'q'
+
 console.log("This bot is starting now!");
 
 var Twit = require('twit');

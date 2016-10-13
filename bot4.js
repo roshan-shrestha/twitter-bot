@@ -1,0 +1,26 @@
+// Tweets a random number
+
+console.log("This bot is starting now!");
+
+var Twit = require('twit');
+
+var config = require('./config');
+var T = new Twit(config);
+
+function tweetIt() {
+	var r = Math.floor(Math.random()*100);
+
+	var tweet = {
+		status: 'Generating a random number ' + r + ' #bottweet'
+	}
+
+	T.post('statuses/update', tweet, tweeted);
+
+	function tweeted(err, data, response){
+		if (err) {
+			console.log("Something's wrong.");
+		} else {
+			console.log("It worked.");
+		}
+	}
+};
