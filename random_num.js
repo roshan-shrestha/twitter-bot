@@ -19,7 +19,7 @@ function tweetIt() {
 	}
 
 	T.post('statuses/update', tweet, tweeted);
-console.log("check");
+
 	function tweeted(err, data, response){
 		if (err) {
 			console.log("Something's wrong.");
