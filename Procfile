@@ -1,0 +1,1 @@
+worker: node /node4/random_num.js
