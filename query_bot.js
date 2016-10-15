@@ -8,14 +8,15 @@ var config = require('./config');
 var T = new Twit(config);
 
 var params = {
-	q: 'hillary', 
+	q: 'hillary donald election',
 	count: 2
 	
 }
 
 T.get('search/tweets', params, gotData);
-//sleep(2);
-//T.get('search/tweets', params, gotData);
+
+//setInterval(T.get, 1000 * 2);
+
 
 function gotData(err, data, response) {
 	var tweets = data.statuses;

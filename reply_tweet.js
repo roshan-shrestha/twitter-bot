@@ -1,4 +1,4 @@
-// Tweets back an automated message but can't run twice.
+// Replies back a tweet.
 
 
 console.log("This bot replies!");
