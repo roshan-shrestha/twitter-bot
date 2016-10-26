@@ -8,7 +8,7 @@ var config = require('./config');
 var T = new Twit(config);
 
 var params = {
-	q: 'hillary donald election',
+	q: 'matthews',
 	count: 2
 	
 }
